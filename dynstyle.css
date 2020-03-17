@@ -1,0 +1,138 @@
+
+body {
+	background: linear-gradient(-45deg, rgb(255, 187, 0), rgb(90, 1, 255));
+	background-size: 1000%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.grid {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.26);
+    padding: 10px 50px 50px 50px;
+    
+}
+ 
+.grid h1 {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1.5vw;
+    background-color: rgb(90, 1, 255);
+    font-size: 5.5rem;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;   
+}
+ 
+#score {
+    color: black;
+    font-family: "Montserrat",sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+ 
+.grid #question {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+ 
+.buttons {
+    margin-top: 30px;
+    text-align: center;
+}
+ 
+#btn0, #btn1, #btn2, #btn3 {
+    border: none;
+    border-radius: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(255, 187, 0);
+    width: 250px;
+    font-size: 20px;
+    color: white;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+ 
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+    cursor: pointer;
+    background-color: rgb(170, 111, 0);
+}
+ 
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+ 
+#progress {
+    font-family: "Montserrat", sans-serif;
+    color: #2b2b2b;
+    font-size: 20px;
+}
+
+.grid .button .animate {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.button {
+    display: inline-block;
+    font-family: "Bebas Neue", sans-serif;
+    border-radius: 4px;
+    background-color: rgb(90, 1, 255);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

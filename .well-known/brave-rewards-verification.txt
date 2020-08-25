@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: rwittmers19.github.io
+Token: 0f1f438d64732557e92488a3733707f98c33d5cbac35a9fcc2486b7ae3428dd2
